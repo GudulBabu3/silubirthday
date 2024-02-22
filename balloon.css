@@ -1,0 +1,168 @@
+.balloon {
+    position: absolute;
+    width: 100px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: rgba(192, 1,5, 0.4);
+    visibility:hidden;
+    animation: move-up 7s cubic-bezier(0.79, -0.78, 0.41, 1.98) 2s forwards;
+}
+    
+.balloon::before{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 150px;
+    background-color:white;
+    top: 110px;
+    left: 50px;
+}
+.balloon::after {
+    position: absolute;
+    content: '';
+    border-bottom: 12px solid red;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top: 109px;
+    left: 41px;
+}
+
+.balloon:nth-child(2) {
+    Left: 80px;
+    background-color: rgba(0,0, 255, 0.5);
+    animation-duration: 6s;
+}
+.balloon:nth-child(2)::after{
+    border-bottom: 12px solid blue;
+}
+.balloon:nth-child(3){
+    Left: 150px;
+    background-color: rgba(255,255, 0, 0.5);
+    animation-duration: 4s;
+}
+.balloon:nth-child(3)::after{
+    border-bottom: 12px solid yellow;
+}
+.balloon:nth-child(4){
+    Left: 200px;
+    background-color: rgba(42, 148, 10, 0.5);
+    animation-duration: 6s;
+}
+.balloon:nth-child(4)::after{
+    border-bottom: 12px solid rgb(21, 170, 8);
+}
+.balloon:nth-child(5){
+    Left: 250px;
+    background-color: rgba(236, 58, 35, 0.5);
+    animation-duration: 5s;
+}
+.balloon:nth-child(5)::after{
+    border-bottom: 12px solid rgb(175, 57, 3);
+}
+.balloon:nth-child(6){
+    Left: 350px;
+    background-color: rgba(255,255, 0, 0.5);
+    animation-duration: 3s;
+}
+.balloon:nth-child(6)::after{
+    border-bottom: 12px solid yellow;
+}
+.balloon:nth-child(7){
+    Left: 400px;
+    background-color: rgba(42, 148, 10, 0.5);
+    animation-duration: 6s;
+}
+.balloon:nth-child(7)::after{
+    border-bottom: 12px solid rgb(21, 170, 8);
+}
+.balloon:nth-child(8){
+    Left: 450px;
+    background-color: rgba(236, 58, 35, 0.5);
+    animation-duration: 4s;
+}
+.balloon:nth-child(8)::after{
+    border-bottom: 12px solid rgb(175, 57, 3);
+}
+.balloon:nth-child(9){
+    left: 550px;
+    background-color: rgba(236, 58, 35, 0.5);
+    animation-duration: 6s;
+}
+.balloon:nth-child(9)::after{
+    border-bottom: 12px solid rgb(175, 57, 3);
+}
+.balloon:nth-child(10) {
+    right: 80px;
+    background-color: rgba(0,0, 255, 0.5);
+    animation-duration: 3s;
+}
+.balloon:nth-child(10)::after{
+    border-bottom: 12px solid blue;
+}
+.balloon:nth-child(11){
+    right: 150px;
+    background-color: rgba(255,255, 0, 0.5);
+    animation-duration: 5s;
+}
+.balloon:nth-child(11)::after{
+    border-bottom: 12px solid yellow;
+}
+.balloon:nth-child(12){
+    right: 200px;
+    background-color: rgba(42, 148, 10, 0.5);
+    animation-duration: 5s;
+}
+.balloon:nth-child(12)::after{
+    border-bottom: 12px solid rgb(21, 170, 8);
+}
+.balloon:nth-child(13){
+    right: 250px;
+    background-color: rgba(236, 58, 35, 0.5);
+    animation-duration: 4s;
+}
+.balloon:nth-child(13)::after{
+    border-bottom: 12px solid rgb(175, 57, 3);
+}
+.balloon:nth-child(14){
+    right: 350px;
+    background-color: rgba(255,255, 0, 0.5);
+    animation-duration: 3s;
+}
+.balloon:nth-child(14)::after{
+    border-bottom: 12px solid yellow;
+}
+.balloon:nth-child(15){
+    right: 400px;
+    background-color: rgba(42, 148, 10, 0.5);
+    animation-duration: 6s;
+}
+.balloon:nth-child(15)::after{
+    border-bottom: 12px solid rgb(21, 170, 8);
+}
+.balloon:nth-child(16){
+    right: 450px;
+    background-color: rgba(236, 58, 35, 0.5);
+    animation-duration: 5s;
+}
+.balloon:nth-child(16)::after{
+    border-bottom: 12px solid rgb(175, 57, 3);
+}
+.balloon:nth-child(17){
+    right: 0px;
+    background-color: rgba(236, 58, 35, 0.5);
+    animation-duration: 4s;
+}
+.balloon:nth-child(17)::after{
+    border-bottom: 12px solid rgb(175, 57, 3);
+}
+
+@keyframes move-up {
+    0%{
+        visibility: visible;
+        top: 90%;
+    }
+    100%{
+        visibility: visible;
+        top: 0%;
+    }
+}

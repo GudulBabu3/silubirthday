@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5e050;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+.BirthdayContainer{
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+.BirthdayContainer img{
+    position: relative;
+    width: 100%;
+    animation: move-down 4s ease-in-out forwards;
+}
+@keyframes move-down {
+    0%{
+        top: -90%;
+    }
+    10%{
+        top: -80%;
+        rotate: 20deg;
+    }
+    100%{
+        top: 0%;
+    }
+}
+.name{
+    margin: auto;
+}
+.name h1{
+    position: relative;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 100px;
+    color: white;
+    text-shadow: 2px 2px #000000;
+    text-align: center;
+    z-index: 2;
+}
+
+.navbar{
+    background-color: white;
+}
+
+.slideshow{
+    max-width: 1200px;
+    max-height: 800px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .BirthdayContainer{
+        width: 100%;
+        height: 50%;
+        margin: 20% auto;
+    }
+
+    .balloon:nth-child(6){
+        display: none;
+    }
+    .balloon:nth-child(6)::after{
+        display: none;
+    }
+    .balloon:nth-child(7){
+        display: none;
+    }
+    .balloon:nth-child(7)::after{
+        display: none;
+    }
+    .balloon:nth-child(8){
+        display: none;
+    }
+    .balloon:nth-child(8)::after{
+        display: none;
+    }
+    .balloon:nth-child(9){
+        display: none;
+    }
+}
+
+.slideshow{
+    background-color: black;
+    overflow: hidden;
+}

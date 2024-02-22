@@ -1,0 +1,22 @@
+.minions {
+    position: absolute;
+    bottom: 50px;
+    width: 400px;
+    max-width: 40vw;
+    animation:  7s cubic-bezier(0.79, -0.78, 0.41, 1.98) 2s forwards;
+}
+.minions img{
+    width: 100%;
+}
+.m1{
+    left: 5%;
+}
+.m2{
+    left: 20%;
+}
+.m3{
+    right: 5%;
+}
+.m4{
+    right: 20%;
+}
